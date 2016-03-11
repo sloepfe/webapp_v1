@@ -1,9 +1,0 @@
-[1] Config.pm:327> INFO - This is Biber 2.2
-[1] Config.pm:330> INFO - Logfile is 'Projektidee-V1.blg'
-[136] biber-MSWIN:283> INFO - === 
-[137] Biber.pm:334> INFO - Reading 'Projektidee-V1.bcf'
-[453] Biber.pm:677> INFO - Found 0 citekeys in bib section 0
-[454] Utils.pm:147> WARN - The file 'Projektidee-V1.bcf' does not contain any citations!
-[558] bbl.pm:505> INFO - Writing 'Projektidee-V1.bbl' with encoding 'UTF-8'
-[559] bbl.pm:596> INFO - Output to Projektidee-V1.bbl
-[560] Biber.pm:107> INFO - WARNINGS: 1
