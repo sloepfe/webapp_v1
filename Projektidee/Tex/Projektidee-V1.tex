@@ -1,0 +1,91 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc} 														% Schriftkodierung
+\usepackage[german]{babel} 														% Rechtschreibprüfung
+\usepackage{amsmath}															% MathematikformelnMakros
+\usepackage{amsfonts}															% SchriftartenMakros
+\usepackage{amssymb}															% 
+\usepackage{lastpage}															% Anzahl Seiten ausgeben
+\usepackage[dvips]{graphicx}													% damit Bilder angezeigt werden können
+\usepackage{wrapfig} 															% Textumflossene Bilder
+\usepackage{xcolor}  															% Ermöglicht farbigen Text
+\usepackage[colorlinks,pdfpagelabels,pdfstartview = FitH,bookmarksnumbered = true,linkcolor = black,citecolor = black]{hyperref} % Inhaltsverzeichnis anklickbar
+\usepackage[scaled=1]{helvet}													% Helvetica importieren
+\renewcommand{\familydefault}{\sfdefault} 										% Helvetica als Standartschrift, Einzug am Anfang wegmachen
+\usepackage[left=2cm,right=2.5cm,top=3cm,bottom=2.8cm, headsep=1.35cm]{geometry} 
+\usepackage{scrpage2} 															% Kopf- und Fusszeile
+\pagestyle{scrheadings}
+\renewcommand{\headfont}{\small}
+\ihead{\includegraphics[width=1.8cm]{pictures/NTB-FHO_LOGO}} 					% Kopfzeile links
+\chead{Projektidee}				 							 					% Kopfzeile mitte
+\ohead{\thepage\ von \pageref{LastPage}}									 	% Kopfzeile rechts
+\ifoot{} 													 					% Fusszeile links
+\cfoot{\today}					 							 					% Fusszeile mitte
+\ofoot{}													 					% Fusszeile rechts
+\setheadsepline{0.4pt}										 					% fügt horizontale linie ein 
+
+\usepackage{csquotes}										 					% für anfürungszeichen
+\usepackage[backend=biber, sorting=none] {biblatex}								% definiert biber als bibliography-programm
+\DeclareFieldFormat{url}{\newline\url{#1}}										% generiert neues Feld mit entsprechenden Werten
+\DeclareFieldFormat{urldate}{\addcomma\space\bibstring{urlseen}\space#1}		
+\DefineBibliographyStrings{german}{urlseen = {Abgerufen am}, andothers = {{et\,al\adddot}}} % generiert String wenn URL in Quelle vorkommt
+\bibliography{knx}																% fügt anhangsliste ein
+
+
+\begin{document}
+
+\title{Semesterprojekt Webapplikationen \break  Projektidee}
+\maketitle
+\bigskip
+\hspace{4cm} \author{Autor: Samuel Loepfe}
+
+\hspace {4cm} Abgabetermin: 04.03.2016											% horizontaler Abstand (5cm)
+
+\hspace{4cm} Dozenten:  Martin Studer / Norman Süsstrunk
+
+
+\vspace{6cm}
+\begin{figure}[h]
+\hspace{6cm}
+\includegraphics[keepaspectratio, width=5cm]{pictures/stvk_logo}
+
+\end{figure}
+
+
+
+
+\newpage																		% neue seite
+%\tableofcontents																% generiert Inhaltsverzeichnis
+\newpage
+%\listoffigures																	% generiert Abbildungsverzeichnis
+\newpage																		% neue seite
+
+\section{Projektidee}
+Der Turnverein Kirchberg SG führt jedes zweite Jahr eine Turnunterhaltung durch, dabei ist jeweils der Durchführungsort immer gleich. Dadurch sind auch die Dimensionen der Bühne gegeben. Dennoch wird jedes Mal eine enorme Zeit beansprucht bis jede Gruppe ihr Material und ihren Aufbau dem Aufbauleiter verständlich gemacht hat. Die Idee des Webapplikationsprojekt greift hier an. Um alle Parteien zu entlasten, Zeit einzusparen wo möglich und um auch nachträglich die Aufstellungen noch mal ansehen zu können, kommt die Applikation ins Spiel. Mittels diesem Webauftritt soll eine einheitliche Darstellung des gesamten Ablaufs möglich sein. Mit den üblichen Werkzeugen für Administratoren (Login, erstellen von neuen Aufbauten, löschen von Einträgen und einer Diashow der bestehenden Aufbauten) und einer einfachen Oberfläche für nicht technik-affine soll der Ablauf der Unterhaltung rasch und simpel er- und dargestellt werden können.
+Es soll eine Liste mit dem benötigten Material geben, die beliebig verändert werden kann, die Startzeit, Reihenfolge, Verantwortliche Person mit Telnr, Dauer und Fotos aus verschiedenen Winkeln werden angegeben. 
+ 
+\large{\textbf{ Bsp: Aktivriege -> Darbietung mit Trampolin und Ringe.}}
+
+\begin{itemize}
+\item Person (M.Müller 078 123 45 67)
+\item Reihenfolge (1)
+\item Startzeit (20.13)
+\item Dauer (4.50min)
+\item Lied (Move It)
+\item Material 
+\begin{enumerate}
+\item 3x Ringe 1.2m ab Boden
+\item 2x Minitramp
+\item 2x grosse Matten
+\item 15 kleine Matten
+\item Magnesium
+\end{enumerate} 
+\item Bilder 
+\begin{enumerate}
+\item Bild1 (Front)
+\item Bild2 (Links)
+\item Bild3 (Rechts)
+\end{enumerate}
+\end{itemize}
+
+\end{document}
